@@ -1,6 +1,37 @@
 // Initialize Lucide icons
 lucide.createIcons();
 
+// Mobile Menu Toggle
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+mobileBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    
+    // Toggle icon between menu and x
+    const icon = mobileBtn.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        mobileBtn.innerHTML = '<i data-lucide="x"></i>';
+    } else {
+        mobileBtn.innerHTML = '<i data-lucide="menu"></i>';
+    }
+    lucide.createIcons();
+});
+
+// Close mobile menu when a nav link is clicked
+const navItems = document.querySelectorAll('.nav-links a');
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            mobileBtn.innerHTML = '<i data-lucide="menu"></i>';
+            lucide.createIcons();
+        }
+    });
+});
+
+lucide.createIcons();
+
 // Navbar scroll effect
 const navbar = document.querySelector('.navbar');
 
