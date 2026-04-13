@@ -1,46 +1,55 @@
-// Initialize Lucide icons
-lucide.createIcons();
+// Initialize Lucide icons (safe)
+if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+}
 
 // Mobile Menu Toggle
 const mobileBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
-mobileBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    
-    // Toggle icon between menu and x
-    const icon = mobileBtn.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-        mobileBtn.innerHTML = '<i data-lucide="x"></i>';
-    } else {
-        mobileBtn.innerHTML = '<i data-lucide="menu"></i>';
-    }
-    lucide.createIcons();
-});
+if (mobileBtn && navLinks) {
+    mobileBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+
+        if (navLinks.classList.contains('active')) {
+            mobileBtn.innerHTML = '<i data-lucide="x"></i>';
+        } else {
+            mobileBtn.innerHTML = '<i data-lucide="menu"></i>';
+        }
+
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+            window.lucide.createIcons();
+        }
+    });
+}
 
 // Close mobile menu when a nav link is clicked
 const navItems = document.querySelectorAll('.nav-links a');
 navItems.forEach(item => {
     item.addEventListener('click', () => {
-        if (navLinks.classList.contains('active')) {
+        if (navLinks && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
-            mobileBtn.innerHTML = '<i data-lucide="menu"></i>';
-            lucide.createIcons();
+            if (mobileBtn) {
+                mobileBtn.innerHTML = '<i data-lucide="menu"></i>';
+            }
+            if (window.lucide && typeof window.lucide.createIcons === 'function') {
+                window.lucide.createIcons();
+            }
         }
     });
 });
 
-lucide.createIcons();
+if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+}
 
 // Navbar scroll effect
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+    if (!navbar) return;
+    if (window.scrollY > 50) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
 });
 
 // Scroll Reveal Animation
@@ -80,5 +89,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth'
             });
         }
+    });
+});
+
+// Video cards play/pause (reels + testimonials)
+const videoCards = document.querySelectorAll('.reel-card, .video-card');
+
+const pauseAllReels = (exceptVideo) => {
+    videoCards.forEach(card => {
+        const video = card.querySelector('.reel-video, .video-embed');
+        if (!video) return;
+        if (exceptVideo && video === exceptVideo) return;
+        video.pause();
+        card.classList.remove('is-playing');
+    });
+};
+
+videoCards.forEach(card => {
+    const video = card.querySelector('.reel-video, .video-embed');
+    const playBtn = card.querySelector('.play-btn');
+    if (!video || !playBtn) return;
+
+    // Avoid autoplay; ensure overlay visible initially
+    card.classList.remove('is-playing');
+
+    const togglePlay = async () => {
+        if (video.paused) {
+            pauseAllReels(video);
+            try {
+                await video.play();
+                card.classList.add('is-playing');
+            } catch (err) {
+                // Autoplay restrictions or blocked play; keep overlay visible
+                card.classList.remove('is-playing');
+            }
+        } else {
+            video.pause();
+            card.classList.remove('is-playing');
+        }
+    };
+
+    playBtn.addEventListener('click', togglePlay);
+    video.addEventListener('click', togglePlay);
+
+    video.addEventListener('pause', () => {
+        card.classList.remove('is-playing');
+    });
+    video.addEventListener('ended', () => {
+        card.classList.remove('is-playing');
     });
 });
