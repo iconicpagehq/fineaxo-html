@@ -5,23 +5,21 @@ require __DIR__ . '/includes/header.php';
 <header class="hero" id="about">
     <div class="container hero-container">
         <div class="hero-content reveal">
-            <div class="tagline">
-                <i data-lucide="trending-up" class="text-accent"></i>
-                <span>Results-Driven Financial Solutions</span>
-            </div>
-            <h1>Elevating Business Through <br /><span class="text-gradient">Precision Accounting</span></h1>
+            <h1>Elevating Business Through <br /><span class="text-gradient caveat-uniquifier" style="font-size: 49px;">Precision Accounting</span></h1>
             <p>I am a results-driven Accounting and Finance professional with hands-on experience in managing
                 end-to-end bookkeeping, financial reporting, and business analysis for global clients.</p>
+                <br>
             <div class="hero-btns">
-                <a href="#expertise" class="btn btn-primary">Explore Expertise <i data-lucide="arrow-right"></i></a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#expertise" class="btn btn-primary">Book a FREE Consultation Call <i data-lucide="arrow-right"></i></a>
+                <!-- <a href="#contact" class="btn btn-secondary">Contact Me</a> -->
             </div>
         </div>
         <div class="hero-visual reveal reveal-delay">
             <div class="glass-card stat-card stat-1">
                 <div class="stat-icon"><i data-lucide="bar-chart-2"></i></div>
                 <div class="stat-info">
-                    <p>Data-driven insights</p>
+                    <h3>Data-driven</h3>
+                    <p>Insights</p>
                 </div>
             </div>
             <div class="glass-card stat-card stat-2">
@@ -38,6 +36,7 @@ require __DIR__ . '/includes/header.php';
                     <p>100% Accuracy</p>
                 </div>
             </div>
+            <img src="profile.png" alt="Profile Photo" class="hero-profile-img">
             <div class="abstract-ring"></div>
             <div class="abstract-ring ring-2"></div>
         </div>
@@ -298,7 +297,7 @@ require __DIR__ . '/includes/header.php';
 
 <section class="section insta-reels">
     <div class="container">
-        <h2 class="insta-title">FOLLOW US <span>INSTAGRAM</span></h2>
+        <h2 class="insta-title">FOLLOW US <span>@finoaxa_accounting</span></h2>
 
         <div class="reels-row scrollbar-hide">
 
