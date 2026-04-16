@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS `fineaxa` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE `fineaxa`;
+
+CREATE TABLE IF NOT EXISTS `contact_submissions` (
+    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(190) NOT NULL,
+    `email` VARCHAR(190) NOT NULL,
+    `phone` VARCHAR(50) NOT NULL,
+    `service` VARCHAR(190) NOT NULL,
+    `message` TEXT NOT NULL,
+    `ip_address` VARCHAR(45) NULL,
+    `user_agent` VARCHAR(512) NULL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

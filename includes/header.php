@@ -27,7 +27,7 @@
 
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Fin<span>Expert.</span></a>
+            <a href="#" class="logo">Fin<span>eaxa</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#expertise">Expertise</a></li>

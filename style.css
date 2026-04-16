@@ -490,7 +490,7 @@ section {
     position: relative;
     flex: 0 0 auto;
     width: 260px;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 9 / 16;
     border-radius: 18px;
     overflow: hidden;
     background: rgba(17, 24, 39, 0.7);
