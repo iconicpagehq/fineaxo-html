@@ -2,7 +2,9 @@
     <footer>
         <div class="container footer-container">
             <div class="footer-logo">
-                <a href="#" class="logo">Fineaxa <span>Solution</span></a>
+                <a href="#" class="logo" aria-label="Fineaxa Solution home">
+                    <img src="logo.png" alt="Fineaxa Solution" class="logo-img footer-logo-img" />
+                </a>
                 <p>Delivering accurate, timely, and insightful financial solutions globally.</p>
             </div>
             <div class="footer-links">
