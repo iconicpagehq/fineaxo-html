@@ -139,3 +139,23 @@ videoCards.forEach(card => {
         card.classList.remove('is-playing');
     });
 });
+
+// Founder Cards — scroll-triggered fade-in
+(function () {
+    const founderCards = document.querySelectorAll('.founder-card');
+    if (!founderCards.length) return;
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    founderCards.forEach(function (card) { observer.observe(card); });
+})();

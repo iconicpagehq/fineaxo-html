@@ -30,6 +30,26 @@
                 font-style: normal;
             }
     </style>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#0d9488',
+                        'brand-dark': '#0f766e',
+                        'brand-light': '#2dd4bf',
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            },
+            corePlugins: { preflight: false }
+        }
+    </script>
 </head>
 
 <body>
@@ -48,6 +68,7 @@
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#why-us">Why Us</a></li>
+                 <li><a href="#pricing">Pricing</a></li>
             </ul>
             <a href="#contact" class="btn btn-primary nav-cta">Contact Us</a>
             <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>

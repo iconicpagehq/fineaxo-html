@@ -175,6 +175,59 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<!-- ============================================================
+     FOUNDERS SECTION
+     ============================================================ -->
+<section class="founders" id="founders">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="subtitle">The Team</h2>
+            <h3 class="title">Meet Our <span class="text-gradient">Founders</span></h3>
+            <p class="founders-tagline">Passionate leaders united by a vision to make world-class accounting accessible
+                to every business.</p>
+        </div>
+
+        <div class="founders-grid">
+
+            <!-- Founder 2 -->
+            <div class="glass-card founder-card hover-glow reveal reveal-delay-1">
+                <div class="founder-avatar-wrap">
+                    <div class="founder-avatar">
+                        <img src="2.jpeg" alt="Priya Sharma" class="founder-avatar-img" />
+                    </div>
+                    <div class="founder-badge">Co-Founder</div>
+                </div>
+                <div class="founder-info">
+                    <h4 class="founder-name">Nilesh Shukla</h4>
+                    <p class="founder-role">Co-Founder &amp; COO</p>
+                    <div class="founder-socials">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Founder 1 -->
+            <div class="glass-card founder-card hover-glow reveal">
+                <div class="founder-avatar-wrap">
+                    <div class="founder-avatar">
+                        <img src="1.jpeg" alt="Arjun Mehta" class="founder-avatar-img" />
+                    </div>
+                    <div class="founder-badge">Co-Founder</div>
+                </div>
+                <div class="founder-info">
+                    <h4 class="founder-name">Amit Rajput</h4>
+                    <p class="founder-role">Co-Founder &amp; CEO</p>
+                    <div class="founder-socials">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
 <section class="testimonials" id="testimonials">
     <div class="container">
         <div class="section-header reveal">
@@ -300,7 +353,214 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<!-- Pricing Plans Section -->
+<section id="pricing" class="py-24" style="background: var(--bg-main);">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16 reveal">
+            <p class="text-sm font-semibold tracking-widest uppercase mb-2" style="color: #0d9488;">Pricing Plans</p>
+            <h2 class="text-4xl font-bold font-heading" style="color: #1f2937;">Transparent Pricing for Your Needs</h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+            <!-- Basic Card -->
+            <div
+                class="reveal bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold mb-4" style="color: #1f2937; font-family: 'Outfit', sans-serif;">Basic
+                    </h3>
+                    <div class="flex items-start justify-center gap-0.5 mb-3">
+                        <span class="text-xl font-bold mt-2" style="color: #0d9488;">$</span>
+                        <span class="text-6xl font-extrabold leading-none"
+                            style="color: #1f2937; font-family: 'Outfit', sans-serif;">299</span>
+                        <span class="text-sm self-end mb-1 ml-1" style="color: #6b7280;">/mo</span>
+                    </div>
+                    <p class="text-sm" style="color: #6b7280;">Perfect for small businesses and startups.</p>
+                </div>
+                <hr class="border-gray-100 mb-6">
+                <ul class="space-y-3 flex-1 mb-8">
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Monthly Bookkeeping
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Bank Reconciliations
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Basic Financial Reporting
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Email Support
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-full border-2 font-semibold text-sm transition-all duration-300 hover:shadow-md"
+                    style="border-color: #0d9488; color: #0d9488; background: transparent;">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Professional Card (Featured) -->
+            <div class="reveal reveal-delay-1 relative rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl scale-105"
+                style="background: #0d9488; border: 2px solid #0f766e;">
+                <!-- Most Popular Badge -->
+                <div class="absolute top-0 right-0 overflow-hidden w-28 h-28">
+                    <div class="absolute top-4 -right-7 text-white text-xs font-bold py-1.5 px-8 rotate-45 shadow-md"
+                        style="background: #0f766e; letter-spacing: 0.04em;">
+                        Most Popular
+                    </div>
+                </div>
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold mb-4 text-white" style="font-family: 'Outfit', sans-serif;">
+                        Professional</h3>
+                    <div class="flex items-start justify-center gap-0.5 mb-3">
+                        <span class="text-xl font-bold mt-2 text-teal-200">$</span>
+                        <span class="text-6xl font-extrabold leading-none text-white"
+                            style="font-family: 'Outfit', sans-serif;">599</span>
+                        <span class="text-sm self-end mb-1 ml-1 text-teal-200">/mo</span>
+                    </div>
+                    <p class="text-sm text-teal-100">Ideal for growing companies needing deeper insights.</p>
+                </div>
+                <hr class="border-teal-600 mb-6">
+                <ul class="space-y-3 flex-1 mb-8">
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Weekly Bookkeeping
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Accounts Payable/Receivable
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Advanced MIS Reporting
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Tax Preparation Support
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Priority Support
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:opacity-95"
+                    style="background: white; color: #0d9488;">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Enterprise Card -->
+            <div
+                class="reveal reveal-delay-2 bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold mb-4" style="color: #1f2937; font-family: 'Outfit', sans-serif;">
+                        Enterprise</h3>
+                    <div class="flex items-center justify-center mb-3">
+                        <span class="text-4xl font-extrabold"
+                            style="color: #1f2937; font-family: 'Outfit', sans-serif;">Custom</span>
+                    </div>
+                    <p class="text-sm" style="color: #6b7280;">Tailored solutions for complex workflows.</p>
+                </div>
+                <hr class="border-gray-100 mb-6">
+                <ul class="space-y-3 flex-1 mb-8">
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Full-Service Accounting
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Virtual CFO Services
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        ERP Implementation Support
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Custom Integrations
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        24/7 Dedicated Support
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-full border-2 font-semibold text-sm transition-all duration-300 hover:shadow-md"
+                    style="border-color: #0d9488; color: #0d9488; background: transparent;">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <section class="section insta-reels">
+
     <div class="container">
         <h2 class="insta-title">FOLLOW US <span>@finoaxa_accounting</span></h2>
 
