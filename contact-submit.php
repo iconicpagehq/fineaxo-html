@@ -1,11 +1,71 @@
 <?php
 declare(strict_types=1);
 
-require __DIR__ . '/includes/db.php';
+// Local (git-ignored) config to set env vars via putenv()
+$localConfig = __DIR__ . '/includes/config.local.php';
+if (is_file($localConfig)) {
+    require $localConfig;
+}
 
-function redirect_with_status(string $status): void {
-    header('Location: index.php?form=' . rawurlencode($status) . '#contact');
+require __DIR__ . '/includes/db.php';
+require __DIR__ . '/lib/PHPMailer/Exception.php';
+require __DIR__ . '/lib/PHPMailer/PHPMailer.php';
+require __DIR__ . '/lib/PHPMailer/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+function redirect_with_status(string $status, array $extraQuery = []): void {
+    $query = array_merge(['form' => $status], $extraQuery);
+    header('Location: index.php?' . http_build_query($query) . '#contact');
     exit;
+}
+
+function log_form_error(string $stage, Throwable $e): void
+{
+    $logPath = __DIR__ . '/contact-submit-error.log';
+    $line = sprintf(
+        "[%s] stage=%s message=%s\n",
+        date('c'),
+        $stage,
+        str_replace(["\r", "\n"], [' ', ' '], $e->getMessage())
+    );
+    @file_put_contents($logPath, $line, FILE_APPEND);
+}
+
+function make_mailer(): PHPMailer
+{
+    $host = (string) (getenv('SMTP_HOST') ?: 'smtp.gmail.com');
+    $port = (int) (getenv('SMTP_PORT') ?: '587');
+    $secure = strtolower((string) (getenv('SMTP_SECURE') ?: 'starttls')); // starttls|ssl
+    $user = (string) (getenv('SMTP_USER') ?: '');
+    $pass = (string) (getenv('SMTP_PASS') ?: '');
+    $from = (string) (getenv('SMTP_FROM') ?: $user);
+    $fromName = (string) (getenv('SMTP_FROM_NAME') ?: 'Finexa Solution');
+
+    if ($user === '' || $pass === '' || $from === '') {
+        throw new RuntimeException('SMTP is not configured (SMTP_USER/SMTP_PASS/SMTP_FROM missing).');
+    }
+
+    $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->isSMTP();
+    $mail->Host = $host;
+    $mail->SMTPAuth = true;
+    $mail->Username = $user;
+    $mail->Password = $pass;
+    $mail->Port = $port;
+
+    if ($secure === 'ssl') {
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // 465
+    } else {
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // 587
+        $mail->SMTPAutoTLS = true;
+    }
+
+    $mail->setFrom($from, $fromName);
+    $mail->isHTML(false);
+
+    return $mail;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -74,15 +134,20 @@ try {
         ':ua' => $userAgent,
     ]);
 } catch (Throwable $e) {
+    log_form_error('db', $e);
     // If DB fails, don't proceed (so you know it's not stored)
     redirect_with_status('error');
 }
 
-$fromEmail = 'noreply@finexasolution.com';
-$siteName = 'Finexa Solution';
+// SMTP / mail settings
+$siteName = (string) (getenv('SMTP_FROM_NAME') ?: 'Finexa Solution');
+$adminTo = (string) (getenv('ADMIN_TO') ?: (getenv('SMTP_FROM') ?: getenv('SMTP_USER') ?: ''));
+if ($adminTo === '') {
+    // still allow DB save even if mail isn't configured, but show error so you notice
+    redirect_with_status('error');
+}
 
 // Email to admin (lead notification)
-$adminTo = $fromEmail;
 $adminSubject = 'New contact form submission';
 $adminBody = "New contact form submission:\n\n"
     . "Name: {$name}\n"
@@ -91,15 +156,9 @@ $adminBody = "New contact form submission:\n\n"
     . "Service: {$service}\n\n"
     . "Message:\n{$message}\n";
 
-$adminHeaders = [];
-$adminHeaders[] = 'MIME-Version: 1.0';
-$adminHeaders[] = 'Content-Type: text/plain; charset=UTF-8';
-$adminHeaders[] = 'From: ' . $siteName . ' <' . $fromEmail . '>';
-$adminHeaders[] = 'Reply-To: ' . $name . ' <' . $email . '>';
-
 // Email to user (confirmation)
 $userTo = $email;
-$userSubject = 'We received your message';
+$userSubject = 'Thanks for your enquiry';
 $userBody = "Hi {$name},\n\n"
     . "Thanks for reaching out to {$siteName}. We’ve received your message and will get back to you shortly.\n\n"
     . "Here are the details you submitted:\n"
@@ -108,14 +167,26 @@ $userBody = "Hi {$name},\n\n"
     . "Message:\n{$message}\n\n"
     . "Regards,\n{$siteName}\n";
 
-$userHeaders = [];
-$userHeaders[] = 'MIME-Version: 1.0';
-$userHeaders[] = 'Content-Type: text/plain; charset=UTF-8';
-$userHeaders[] = 'From: ' . $siteName . ' <' . $fromEmail . '>';
+try {
+    // Admin mail
+    $m1 = make_mailer();
+    $m1->addAddress($adminTo);
+    $m1->Subject = $adminSubject;
+    $m1->Body = $adminBody;
+    $m1->addReplyTo($email, $name);
+    $m1->send();
 
-// Email (best-effort on local XAMPP; DB save is the source of truth)
-@mail($adminTo, $adminSubject, $adminBody, implode("\r\n", $adminHeaders));
-@mail($userTo, $userSubject, $userBody, implode("\r\n", $userHeaders));
+    // User auto-reply
+    $m2 = make_mailer();
+    $m2->addAddress($userTo, $name);
+    $m2->Subject = $userSubject;
+    $m2->Body = $userBody;
+    $m2->send();
+} catch (Throwable $e) {
+    // DB save succeeded; don't block success UI, but log the mail failure.
+    log_form_error('smtp', $e);
+    redirect_with_status('success', ['mail' => 'failed']);
+}
 
 redirect_with_status('success');
 

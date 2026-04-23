@@ -296,8 +296,13 @@ require __DIR__ . '/includes/header.php';
 
         <?php
         $status = isset($_GET['form']) ? (string) $_GET['form'] : '';
+        $mailStatus = isset($_GET['mail']) ? (string) $_GET['mail'] : '';
         if ($status === 'success') {
-            echo '<div class="form-alert success reveal">Thanks! We’ve received your message and sent a confirmation email.</div>';
+            if ($mailStatus === 'failed') {
+                echo '<div class="form-alert success reveal">Thanks! We’ve received your message. (Email delivery is pending — our team will reach out shortly.)</div>';
+            } else {
+                echo '<div class="form-alert success reveal">Thanks! We’ve received your message and sent a confirmation email.</div>';
+            }
         } elseif ($status === 'error') {
             echo '<div class="form-alert error reveal">Sorry — something went wrong. Please try again in a moment.</div>';
         }
