@@ -7,6 +7,7 @@
     <title>Accounting & Finance Professional</title>
     <meta name="description"
         content="Portfolio of a results-driven Accounting and Finance professional specializing in bookkeeping, financial reporting, and business analysis.">
+    <link rel="icon" type="image/png" href="icon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
