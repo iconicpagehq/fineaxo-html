@@ -65,10 +65,10 @@
             <img src="logo.png" alt="Fineaxa Solution" class="logo-img" />
         </a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">Why Us</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#why-us">Why Choose Us</a></li>
                  <li><a href="#pricing">Pricing</a></li>
             </ul>
             <a href="#contact" class="btn btn-primary nav-cta">Contact Us</a>

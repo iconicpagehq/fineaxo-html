@@ -6,18 +6,25 @@ require __DIR__ . '/includes/header.php';
     <div class="container hero-container">
         <div class="hero-content reveal">
             <h1>Elevating Business Through <br /><span class="text-gradient caveat-uniquifier"
-                    style="font-size: 49px;">Precision Accounting</span></h1>
-            <p>I am a results-driven Accounting and Finance professional with hands-on experience in managing
-                end-to-end bookkeeping, financial reporting, and business analysis for global clients.</p>
+                    style="font-size: 49px;">Precision Financial Bookkeeping</span></h1>
+            <p>I am a results-driven Accounting and Finance professional with extensive hands-on experience in managing end-to-end bookkeeping, financial reporting, and business analysis for global clients.</p>
             <br>
             <div class="hero-btns">
-                <a href="#expertise" class="btn btn-primary">Book a FREE Consultation Call <i
+                <a href="#expertise" class="btn btn-primary">Begin Your Free Trial<i
                         data-lucide="arrow-right"></i></a>
                 <!-- <a href="#contact" class="btn btn-secondary">Contact Me</a> -->
             </div>
         </div>
         <div class="hero-visual reveal reveal-delay">
-            <div class="glass-card stat-card stat-1">
+             <div class="glass-card stat-card stat-1">
+                <div class="stat-icon"><i data-lucide="file-spreadsheet"></i></div>
+                <div class="stat-info">
+                    <h3>bookkeeping</h3>
+                    <p>100% Accuracy</p>
+                </div>
+            </div>
+        
+            <div class="glass-card stat-card stat-3">
                 <div class="stat-icon"><i data-lucide="bar-chart-2"></i></div>
                 <div class="stat-info">
                     <h3>Data-driven</h3>
@@ -31,13 +38,7 @@ require __DIR__ . '/includes/header.php';
                     <p>International standards</p>
                 </div>
             </div>
-            <div class="glass-card stat-card stat-3">
-                <div class="stat-icon"><i data-lucide="file-spreadsheet"></i></div>
-                <div class="stat-info">
-                    <h3>Reconciliations</h3>
-                    <p>100% Accuracy</p>
-                </div>
-            </div>
+           
             <img src="profile.png" alt="Profile Photo" class="hero-profile-img">
             <div class="abstract-ring"></div>
             <div class="abstract-ring ring-2"></div>
@@ -55,46 +56,50 @@ require __DIR__ . '/includes/header.php';
             <div class="glass-card expertise-card hover-glow reveal">
                 <div class="card-icon-wrapper"><i data-lucide="calculator" class="card-icon text-accent"></i></div>
                 <h4>Platform Mastery</h4>
-                <p>Expertise in QuickBooks Online (QBO), Oracle ERP, NetSuite, Xero, and MS Dynamics Business
-                    Central.</p>
+                <p>Bookkeeping platform expertise in QuickBooks Online (QBO), Oracle ERP, NetSuite, Xero, and MS Dynamics Business Central for clean financial records.</p>
             </div>
             <div class="glass-card expertise-card hover-glow reveal reveal-delay-1">
+                <div class="card-icon-wrapper"><i data-lucide="database" class="card-icon text-accent"></i></div>
+                <h4>Data Entry and data management</h4>
+                <p>Accurate bookkeeping data entry and management, ledger maintenance, transaction validation, and quality control for reliable books.</p>
+            </div>
+            <div class="glass-card expertise-card hover-glow reveal reveal-delay-2">
                 <div class="card-icon-wrapper"><i data-lucide="building-2" class="card-icon text-accent"></i></div>
                 <h4>Company Setup</h4>
-                <p>Comprehensive company setup and chart of accounts structuring tailored for your business model.
-                </p>
+                <p>Comprehensive bookkeeping company setup and chart of accounts structuring, designed to keep your financial records complete from day one.</p>
             </div>
             <div class="glass-card expertise-card hover-glow reveal reveal-delay-2">
                 <div class="card-icon-wrapper"><i data-lucide="clipboard-check" class="card-icon text-accent"></i>
                 </div>
                 <h4>Audit & Compliance</h4>
-                <p>Robust audit support, financial modeling, and preparation of financial statements (P&L, Balance
-                    Sheet, Cash Flow).</p>
+                <p>Bookkeeping-driven audit support, compliance preparation, and financial statement readiness for accurate P&L, balance sheet, and cash flow reporting.</p>
             </div>
             <div class="glass-card expertise-card hover-glow reveal">
                 <div class="card-icon-wrapper"><i data-lucide="line-chart" class="card-icon text-accent"></i></div>
                 <h4>Data Analysis</h4>
-                <p>Advanced MS Excel data analysis, reporting, business analysis, and comprehensive company
-                    valuation.</p>
+                <p>Bookkeeping analytics and reporting, transaction trend tracking, variance analysis, and insights to improve financial accuracy.</p>
             </div>
             <div class="glass-card expertise-card hover-glow reveal reveal-delay-1">
                 <div class="card-icon-wrapper"><i data-lucide="wallet" class="card-icon text-accent"></i></div>
                 <h4>Cash Management</h4>
-                <p>Diligent bank and credit card reconciliations, alongside strategic cash flow analysis and
-                    management.</p>
+                <p>Bookkeeping-based cash management including bank and credit card reconciliations, cash flow tracking, and payment verification.</p>
             </div>
             <div class="glass-card expertise-card hover-glow reveal reveal-delay-2">
                 <div class="card-icon-wrapper"><i data-lucide="arrow-left-right" class="card-icon text-accent"></i>
                 </div>
                 <h4>AP/AR Management</h4>
-                <p>Streamlined Accounts Payable & Accounts Receivable management for optimized operational
-                    liquidity.</p>
+                <p>Bookkeeping support for Accounts Payable and Accounts Receivable, vendor/customer ledger maintenance, and aging control.</p>
+            </div>
+            <div class="glass-card expertise-card hover-glow reveal">
+                <div class="card-icon-wrapper"><i data-lucide="briefcase" class="card-icon text-accent"></i></div>
+                <h4>Virtual Assistant services</h4>
+                <p>Bookkeeping-focused virtual assistant support for transaction recording, invoice processing, document organization, and bookkeeping task coordination.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="services" id="services">
+<!-- <section class="services" id="services">
     <div class="container">
         <div class="services-wrapper glass-card reveal">
             <div class="services-content">
@@ -135,7 +140,7 @@ require __DIR__ . '/includes/header.php';
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="why-us" id="why-us">
     <div class="container">
@@ -178,7 +183,7 @@ require __DIR__ . '/includes/header.php';
 <!-- ============================================================
      FOUNDERS SECTION
      ============================================================ -->
-<section class="founders" id="founders">
+ <section class="founders" id="founders">
     <div class="container">
         <div class="section-header reveal">
             <h2 class="subtitle">The Team</h2>
@@ -226,9 +231,9 @@ require __DIR__ . '/includes/header.php';
 
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="testimonials" id="testimonials">
+<!-- <section class="testimonials" id="testimonials">
     <div class="container">
         <div class="section-header reveal">
             <h2 class="subtitle">Testimonials</h2>
@@ -266,6 +271,7 @@ require __DIR__ . '/includes/header.php';
                     <p class="video-name">Client Testimonial</p>
                     <p class="video-role">Bookkeeping</p>
                 </div>
+                </div>
             </div>
 
             <div class="video-card">
@@ -283,6 +289,212 @@ require __DIR__ . '/includes/header.php';
                     <p class="video-role">Financial Reporting</p>
                 </div>
             </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Pricing Plans Section -->
+<section id="pricing" class="py-24" style="background: var(--bg-main);">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16 reveal">
+            <p class="text-sm font-semibold tracking-widest uppercase mb-2" style="color: #0d9488;">Pricing Plans</p>
+            <h2 class="text-4xl font-bold font-heading" style="color: #1f2937;">Transparent Pricing for Your Needs</h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+            <!-- Basic Card -->
+            <div
+                class="reveal bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold mb-4" style="color: #1f2937; font-family: 'Outfit', sans-serif;">Basic
+                    </h3>
+                    <div class="flex items-start justify-center gap-0.5 mb-3">
+                        <!-- <span class="text-xl font-bold mt-2" style="color: #0d9488;"></span> -->
+                        <span class="text-6xl font-extrabold leading-none"
+                            style="color: #1f2937; font-family: 'Outfit', sans-serif;">299</span>
+                        <!-- <span class="text-sm self-end mb-1 ml-1" style="color: #6b7280;"></span> -->
+                    </div>
+                    <p class="text-sm" style="color: #6b7280;">Perfect for small businesses and startups.</p>
+                </div>
+                <hr class="border-gray-100 mb-6">
+                <ul class="space-y-3 flex-1 mb-8">
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                         Bookkeeping
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Bank Reconciliations
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Basic Financial Reporting
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Accounts Payable/Receivable
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-full border-2 font-semibold text-sm transition-all duration-300 hover:shadow-md"
+                    style="border-color: #0d9488; color: #0d9488; background: transparent;">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Professional Card (Featured) -->
+            <div class="reveal reveal-delay-1 relative rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl scale-105"
+                style="background: #0d9488; border: 2px solid #0f766e;">
+                <!-- Most Popular Badge -->
+                <div class="absolute top-0 right-0 overflow-hidden w-28 h-28">
+                    <div class="absolute top-4 -right-7 text-white text-xs font-bold py-1.5 px-8 rotate-45 shadow-md"
+                        style="background: #0f766e; letter-spacing: 0.04em;">
+                        Most Popular
+                    </div>
+                </div>
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold mb-4 text-white" style="font-family: 'Outfit', sans-serif;">
+                        Professional</h3>
+                    <div class="flex items-start justify-center gap-0.5 mb-3">
+                        <span class="text-xl font-bold mt-2 text-teal-200">$</span>
+                        <span class="text-6xl font-extrabold leading-none text-white"
+                            style="font-family: 'Outfit', sans-serif;">5</span>
+                        <span class="text-sm self-end mb-1 ml-1 text-teal-200">/mo</span>
+                    </div>
+                    <p class="text-sm text-teal-100">Ideal for growing companies needing deeper insights.</p>
+                </div>
+                <hr class="border-teal-600 mb-6">
+                <ul class="space-y-3 flex-1 mb-8">
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                         Bookkeeping
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Accounts Payable/Receivable
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Advanced MIS Reporting
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Tax Preparation Support
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Priority Support
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:opacity-95"
+                    style="background: white; color: #0d9488;">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Enterprise Card -->
+            <div
+                class="reveal reveal-delay-2 bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold mb-4" style="color: #1f2937; font-family: 'Outfit', sans-serif;">
+                        Enterprise</h3>
+                    <div class="flex items-center justify-center mb-3">
+                        <span class="text-4xl font-extrabold"
+                            style="color: #1f2937; font-family: 'Outfit', sans-serif;">Custom</span>
+                    </div>
+                    <p class="text-sm" style="color: #6b7280;">Tailored solutions for complex workflows.</p>
+                </div>
+                <hr class="border-gray-100 mb-6">
+                <ul class="space-y-3 flex-1 mb-8">
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Full-Bookkeeping
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Virtual CFO Services
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        ERP Implementation Support
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        Custom Integrations
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
+                        24/7 Dedicated Support
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-full border-2 font-semibold text-sm transition-all duration-300 hover:shadow-md"
+                    style="border-color: #0d9488; color: #0d9488; background: transparent;">
+                    Contact Us
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -358,221 +570,17 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Pricing Plans Section -->
-<section id="pricing" class="py-24" style="background: var(--bg-main);">
-    <div class="max-w-6xl mx-auto px-6">
 
-        <!-- Section Header -->
-        <div class="text-center mb-16 reveal">
-            <p class="text-sm font-semibold tracking-widest uppercase mb-2" style="color: #0d9488;">Pricing Plans</p>
-            <h2 class="text-4xl font-bold font-heading" style="color: #1f2937;">Transparent Pricing for Your Needs</h2>
-        </div>
 
-        <!-- Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-
-            <!-- Basic Card -->
-            <div
-                class="reveal bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-4" style="color: #1f2937; font-family: 'Outfit', sans-serif;">Basic
-                    </h3>
-                    <div class="flex items-start justify-center gap-0.5 mb-3">
-                        <span class="text-xl font-bold mt-2" style="color: #0d9488;">$</span>
-                        <span class="text-6xl font-extrabold leading-none"
-                            style="color: #1f2937; font-family: 'Outfit', sans-serif;">299</span>
-                        <span class="text-sm self-end mb-1 ml-1" style="color: #6b7280;">/mo</span>
-                    </div>
-                    <p class="text-sm" style="color: #6b7280;">Perfect for small businesses and startups.</p>
-                </div>
-                <hr class="border-gray-100 mb-6">
-                <ul class="space-y-3 flex-1 mb-8">
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Monthly Bookkeeping
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Bank Reconciliations
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Basic Financial Reporting
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Email Support
-                    </li>
-                </ul>
-                <a href="#contact"
-                    class="block text-center py-3 px-6 rounded-full border-2 font-semibold text-sm transition-all duration-300 hover:shadow-md"
-                    style="border-color: #0d9488; color: #0d9488; background: transparent;">
-                    Get Started
-                </a>
-            </div>
-
-            <!-- Professional Card (Featured) -->
-            <div class="reveal reveal-delay-1 relative rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl scale-105"
-                style="background: #0d9488; border: 2px solid #0f766e;">
-                <!-- Most Popular Badge -->
-                <div class="absolute top-0 right-0 overflow-hidden w-28 h-28">
-                    <div class="absolute top-4 -right-7 text-white text-xs font-bold py-1.5 px-8 rotate-45 shadow-md"
-                        style="background: #0f766e; letter-spacing: 0.04em;">
-                        Most Popular
-                    </div>
-                </div>
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-4 text-white" style="font-family: 'Outfit', sans-serif;">
-                        Professional</h3>
-                    <div class="flex items-start justify-center gap-0.5 mb-3">
-                        <span class="text-xl font-bold mt-2 text-teal-200">$</span>
-                        <span class="text-6xl font-extrabold leading-none text-white"
-                            style="font-family: 'Outfit', sans-serif;">599</span>
-                        <span class="text-sm self-end mb-1 ml-1 text-teal-200">/mo</span>
-                    </div>
-                    <p class="text-sm text-teal-100">Ideal for growing companies needing deeper insights.</p>
-                </div>
-                <hr class="border-teal-600 mb-6">
-                <ul class="space-y-3 flex-1 mb-8">
-                    <li class="flex items-center gap-3 text-sm text-teal-50">
-                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Weekly Bookkeeping
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-teal-50">
-                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Accounts Payable/Receivable
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-teal-50">
-                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Advanced MIS Reporting
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-teal-50">
-                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Tax Preparation Support
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-teal-50">
-                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Priority Support
-                    </li>
-                </ul>
-                <a href="#contact"
-                    class="block text-center py-3 px-6 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:opacity-95"
-                    style="background: white; color: #0d9488;">
-                    Get Started
-                </a>
-            </div>
-
-            <!-- Enterprise Card -->
-            <div
-                class="reveal reveal-delay-2 bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-4" style="color: #1f2937; font-family: 'Outfit', sans-serif;">
-                        Enterprise</h3>
-                    <div class="flex items-center justify-center mb-3">
-                        <span class="text-4xl font-extrabold"
-                            style="color: #1f2937; font-family: 'Outfit', sans-serif;">Custom</span>
-                    </div>
-                    <p class="text-sm" style="color: #6b7280;">Tailored solutions for complex workflows.</p>
-                </div>
-                <hr class="border-gray-100 mb-6">
-                <ul class="space-y-3 flex-1 mb-8">
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Full-Service Accounting
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Virtual CFO Services
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        ERP Implementation Support
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        Custom Integrations
-                    </li>
-                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
-                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M5 13l4 4L19 7" />
-                        </svg>
-                        24/7 Dedicated Support
-                    </li>
-                </ul>
-                <a href="#contact"
-                    class="block text-center py-3 px-6 rounded-full border-2 font-semibold text-sm transition-all duration-300 hover:shadow-md"
-                    style="border-color: #0d9488; color: #0d9488; background: transparent;">
-                    Contact Us
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="section insta-reels">
+<!-- <section class="section insta-reels">
 
     <div class="container">
         <h2 class="insta-title">FOLLOW US <span>@finoaxa_accounting</span></h2>
 
         <div class="reels-row scrollbar-hide">
 
-            <!-- Reel 1 -->
-            <div class="reel-card">
+             Reel 1 -->
+            <!-- <div class="reel-card">
                 <video class="reel-video" playsinline preload="metadata">
                     <source src="https://rockfoldfitness.com/wp-content/uploads/2025/12/Video-293.mp4" type="video/mp4">
                 </video>
@@ -586,10 +594,10 @@ require __DIR__ . '/includes/header.php';
                     rel="noopener noreferrer">
                     Follow on Instagram
                 </a>
-            </div>
+            </div> -->
 
             <!-- Reel 2 -->
-            <div class="reel-card">
+            <!-- <div class="reel-card">
                 <video class="reel-video" playsinline preload="metadata">
                     <source src="https://rockfoldfitness.com/wp-content/uploads/2025/12/Video-279.mp4" type="video/mp4">
                 </video>
@@ -603,10 +611,10 @@ require __DIR__ . '/includes/header.php';
                     rel="noopener noreferrer">
                     Follow on Instagram
                 </a>
-            </div>
+            </div> -->
 
             <!-- Reel 3 -->
-            <div class="reel-card">
+            <!-- <div class="reel-card">
                 <video class="reel-video" playsinline preload="metadata">
                     <source src="https://rockfoldfitness.com/wp-content/uploads/2025/12/Video-167.mp4" type="video/mp4">
                 </video>
@@ -620,10 +628,10 @@ require __DIR__ . '/includes/header.php';
                     rel="noopener noreferrer">
                     Follow on Instagram
                 </a>
-            </div>
+            </div> -->
 
             <!-- Reel 4 -->
-            <div class="reel-card">
+            <!-- <div class="reel-card">
                 <video class="reel-video" playsinline preload="metadata">
                     <source src="https://rockfoldfitness.com/wp-content/uploads/2025/12/Video-752.mp4" type="video/mp4">
                 </video>
@@ -637,10 +645,10 @@ require __DIR__ . '/includes/header.php';
                     rel="noopener noreferrer">
                     Follow on Instagram
                 </a>
-            </div>
+            </div> -->
 
             <!-- Reel 5 -->
-            <div class="reel-card">
+            <!-- <div class="reel-card">
                 <video class="reel-video" playsinline preload="metadata">
                     <source src="https://rockfoldfitness.com/wp-content/uploads/2025/12/Video-397.mp4" type="video/mp4">
                 </video>
@@ -658,7 +666,7 @@ require __DIR__ . '/includes/header.php';
 
         </div>
     </div>
-</section>
+</section> --> 
 
 <?php
 require __DIR__ . '/includes/footer.php';
