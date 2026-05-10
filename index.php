@@ -5,8 +5,7 @@ require __DIR__ . '/includes/header.php';
 <header class="hero" id="about">
     <div class="container hero-container">
         <div class="hero-content reveal">
-            <h1>Elevating Business Through <br /><span class="text-gradient caveat-uniquifier"
-                    style="font-size: 49px;">Precision Financial Bookkeeping</span></h1>
+            <h1>Elevating Business Through <br /><span class="text-gradient caveat-uniquifier hero-accent">Precision Financial Bookkeeping</span></h1>
             <p>I am a results-driven Accounting and Finance professional with extensive hands-on experience in managing end-to-end bookkeeping, financial reporting, and business analysis for global clients.</p>
             <br>
             <div class="hero-btns">
@@ -363,12 +362,11 @@ require __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Professional Card (Featured) -->
-            <div class="reveal reveal-delay-1 relative rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl scale-105"
+            <div class="reveal reveal-delay-1 relative rounded-2xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl"
                 style="background: #0d9488; border: 2px solid #0f766e;">
                 <!-- Most Popular Badge -->
-                <div class="absolute top-0 right-0 overflow-hidden w-28 h-28">
-                    <div class="absolute top-4 -right-7 text-white text-xs font-bold py-1.5 px-8 rotate-45 shadow-md"
-                        style="background: #0f766e; letter-spacing: 0.04em;">
+                <div class="absolute top-0 right-0 overflow-hidden" style="width: 140px; height: 140px;">
+                    <div class="absolute" style="top: 22px; right: -42px; background: #0f766e; letter-spacing: 0.04em; transform: rotate(45deg); padding: 8px 64px; font-size: 12px; font-weight: 800; color: #fff; box-shadow: 0 10px 18px rgba(0,0,0,0.18);">
                         Most Popular
                     </div>
                 </div>
@@ -503,7 +501,7 @@ require __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="section-header reveal">
             <h2 class="subtitle">Contact</h2>
-            <h3 class="title">Let’s Talk About Your Requirements</h3>
+            <h3 class="title">Let's Talk About Your Requirements</h3>
         </div>
 
         <?php
@@ -511,12 +509,12 @@ require __DIR__ . '/includes/header.php';
         $mailStatus = isset($_GET['mail']) ? (string) $_GET['mail'] : '';
         if ($status === 'success') {
             if ($mailStatus === 'failed') {
-                echo '<div class="form-alert success reveal">Thanks! We’ve received your message. (Email delivery is pending — our team will reach out shortly.)</div>';
+                echo '<div class="form-alert success reveal">Thanks! We have received your message. (Email delivery is pending - our team will reach out shortly.)</div>';
             } else {
-                echo '<div class="form-alert success reveal">Thanks! We’ve received your message and sent a confirmation email.</div>';
+                echo '<div class="form-alert success reveal">Thanks! We have received your message and sent a confirmation email.</div>';
             }
         } elseif ($status === 'error') {
-            echo '<div class="form-alert error reveal">Sorry — something went wrong. Please try again in a moment.</div>';
+            echo '<div class="form-alert error reveal">Sorry - something went wrong. Please try again in a moment.</div>';
         }
         ?>
 

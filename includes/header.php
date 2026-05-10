@@ -62,7 +62,7 @@
     <nav class="navbar">
         <div class="container nav-container">
         <a href="#" class="logo" aria-label="Fineaxa Solution home">
-            <img src="logo.png" alt="Fineaxa Solution" class="logo-img" />
+            <img src="logo.png" alt="Fineaxa Solution" class="logo-img" height="160" width="160" />
         </a>
             <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>

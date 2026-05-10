@@ -132,9 +132,13 @@ h6 {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* Consistent left/right gutter on all screens */
+    width: 100% !important;
+    max-width: 1200px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* Utilities */
@@ -237,14 +241,14 @@ h6 {
 
 .logo-img {
     display: block;
-    height: 86px;
+    height: 160px;
     width: auto;
-    max-width: 360px;
+    max-width: 460px;
     object-fit: contain;
 }
 
 .footer-logo-img {
-    height: 110px;
+    height: 160px;
     max-width: 420px;
 }
 
@@ -281,7 +285,8 @@ h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    /* Account for fixed navbar (logo + padding) */
+    padding-top: 190px;
     /* Accounts for navbar */
 }
 
@@ -307,6 +312,13 @@ h6 {
 .hero h1 {
     font-size: clamp(3rem, 5vw, 4.5rem);
     margin-bottom: 1.5rem;
+    overflow-wrap: anywhere;
+}
+
+.hero-accent {
+    font-size: clamp(3.1rem, 6vw, 3.2rem);
+    line-height: 1.05;
+    display: inline-block;
 }
 
 .hero p {
@@ -1154,9 +1166,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        flex: 1 1 220px;
+        min-width: 0;
+    }
+
+    .mobile-menu-btn {
+        margin-left: auto;
+    }
+
     .logo-img {
-        height: 64px;
-        max-width: 260px;
+        height: 120px;
+        max-width: 100%;
     }
 
     .footer-logo-img {
@@ -1216,7 +1242,7 @@ footer {
 
     /* Hero */
     .hero {
-        padding-top: 120px;
+        padding-top: 150px;
         padding-bottom: 3rem;
         min-height: auto;
     }
@@ -1368,6 +1394,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
     .hero h1 {
         font-size: 1.2rem;
         text-align: center;
