@@ -14,11 +14,11 @@
         <div class="footer-contact"
             style="display: flex; flex-direction: column; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;">
             <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="map-pin"
-                    style="width: 18px; color: var(--accent-gold);"></i> [Swargate Pune]</span>
+                    style="width: 18px; color: var(--accent-gold);"></i> Swargate Pune</span>
             <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="phone"
-                    style="width: 18px; color: var(--accent-gold);"></i> [9595331337,9657314407]</span>
+                    style="width: 18px; color: var(--accent-gold);"></i> +91 9595331337, +91 9657314407</span>
             <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="mail"
-                    style="width: 18px; color: var(--accent-gold);"></i> [Email-info@finexasolution.com]</span>
+                    style="width: 18px; color: var(--accent-gold);"></i> Email - info@finexasolution.com</span>
         </div>
         <div class="footer-social">
             <a href="#" aria-label="LinkedIn" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="16"
