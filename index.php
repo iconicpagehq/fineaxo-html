@@ -397,6 +397,14 @@ require __DIR__ . '/includes/header.php';
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M5 13l4 4L19 7" />
                         </svg>
+                        Bank Reconciliations
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-teal-50">
+                        <svg class="w-4 h-4 flex-shrink-0 text-teal-200" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
                         Accounts Payable/Receivable
                     </li>
                     <li class="flex items-center gap-3 text-sm text-teal-50">
@@ -459,6 +467,14 @@ require __DIR__ . '/includes/header.php';
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M5 13l4 4L19 7" />
                         </svg>
+                        Bank Reconciliations
+                    </li>
+                    <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
+                        <svg class="w-4 h-4 flex-shrink-0" style="color: #0d9488;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M5 13l4 4L19 7" />
+                        </svg>
                         Virtual CFO Services
                     </li>
                     <li class="flex items-center gap-3 text-sm" style="color: #4b5563;">
@@ -506,13 +522,8 @@ require __DIR__ . '/includes/header.php';
 
         <?php
         $status = isset($_GET['form']) ? (string) $_GET['form'] : '';
-        $mailStatus = isset($_GET['mail']) ? (string) $_GET['mail'] : '';
         if ($status === 'success') {
-            if ($mailStatus === 'failed') {
-                echo '<div class="form-alert success reveal">Thanks! We have received your message. (Email delivery is pending - our team will reach out shortly.)</div>';
-            } else {
-                echo '<div class="form-alert success reveal">Thanks! We have received your message and sent a confirmation email.</div>';
-            }
+            echo '<div class="form-alert success reveal">Thanks! We have received your message. Our team will reach out shortly.</div>';
         } elseif ($status === 'error') {
             echo '<div class="form-alert error reveal">Sorry - something went wrong. Please try again in a moment.</div>';
         }

@@ -44,5 +44,5 @@ putenv('SMTP_DEBUG=0');
 //     echo password_hash('your-password', PASSWORD_DEFAULT);
 //
 // Example (replace hash):
-// putenv('ADMIN_USER=admin');
-// putenv('ADMIN_PASS_HASH=$2y$10$REPLACE_WITH_PASSWORD_HASH');
+putenv('ADMIN_USER=admin');
+putenv('ADMIN_PASS_HASH=$2y$10$iSJaWFeHSag.zVmiY7LDpe6ug.2wdfF/C4nIp2dRFIHI9W9CK2MKO');
